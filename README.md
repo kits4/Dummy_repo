@@ -66,12 +66,4 @@ def autoreply(toaddr):
 	fromaddr = "replace with email of admin here."
 	the_pwd = "passwordxxxforxxxxthexxxxemail"
   ...
-  ```
-
-## Authors
-
-* **Mradul Dubey** - *django-theatre-ticket-booking* - [MradulDubey](https://github.com/mraduldubey)
-
-## License
-
-This project is licensed under the GNU GENERAL PUBLIC LICENSE License - see the [LICENSE.md](LICENSE?raw=true "LICENSE") file for details.
+  ``
