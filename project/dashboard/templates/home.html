@@ -47,18 +47,19 @@
 <div class="container">
       <!-- Example row of columns -->
       <div class="row">
-        <div class="col-md-4">
-          <h2>Waves Theatre</h2>
-          <p>Waves Theatre is the leading theatre in the city. Donate to our Theatre Mentorship Program.' </p>
-          <p><a class="btn btn-danger" href="{% url 'checkout' %}"role="button">Donate to Theatres</a></p>
+        <div class="col-md-6">
+          <h2>CookMyShow</h2>
+          <p>CookMyShow is the leading movie booking platform in the city</p>
+          <!-- <p><a class="btn btn-danger" href="{% url 'checkout' %}"role="button">Donate to Theatres</a></p> -->
         </div>
-        <div class="col-md-4">
+			
+        <!-- <div class="col-md-4">
          <a href="#"><img src="{% static 'img/1.png' %}" class='img-responsive' alt="Kolkata"/></a>
-       </div>
+       </div> -->
 
-        <div class="col-md-4">
+        <div class="col-md-6">
         {% if request.user.is_authenticated %}
-        <h3>Hello {{ request.user }}</h3>
+        <h3>Hello, {{ request.user }}</h3>
         {% else %}
          <form class="login" method="POST" action="/accounts/login/">
          {% csrf_token %}
