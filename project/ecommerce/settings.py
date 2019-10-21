@@ -31,7 +31,7 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'batchbvjti@gmail.com'
 EMAIL_HOST_PASSWORD = 'vjti@123b'
 EMAIL_PORT = '587'
-EMAIL_USE_TLS = True
+#EMAIL_USE_TLS = True
 
 # Application definition
 
