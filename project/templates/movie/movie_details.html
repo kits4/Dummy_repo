@@ -1,7 +1,7 @@
 {% extends "common/base.html" %}
 
 {% block title %}
-    <title>Waves Theatre | Movie Details</title>
+    <title>CookMyShow | Movie Details</title>
 {% endblock %}
 
 {% block content %}
@@ -62,7 +62,7 @@
 		    </a>
 		  </div>
 		  <div class="media-body">
-		    <h4 class="media-heading"><a href="{% url 'home' %}">Waves Cinema</a></h4>
+		    <h4 class="media-heading"><a href="{% url 'home' %}">CookMyShow</a></h4>
 		    <ul>
 		    {% for showtime in theatre %}
 		      <li><a href="{% url 'reserve_seat' showtime.id %}">{{ showtime.time|time:"h:i A" }}</a></li>
