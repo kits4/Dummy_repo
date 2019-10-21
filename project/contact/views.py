@@ -15,8 +15,13 @@ def contact(request):
 		user_name = form.cleaned_data['Username']
 		user_message = form.cleaned_data['Message']
 		emailsub = user_name + " tried contacting you on CookMyShow."
+<<<<<<< HEAD
 		emailFrom =form.cleaned_data['UserEmail']
 		emailmessage = '%s %s user email: %s' %(user_message, user_name, emailFrom)
+=======
+		emailFrom = form.cleaned_data['UserEmail']
+		emailmessage = '%s \nUsername: %s\nEmail: %s' %(user_message, user_name, emailFrom)
+>>>>>>> f3c8cf09b4c0d63fa1ac9ce6449bf7fe4c430448
 		emailTo = [settings.EMAIL_HOST_USER]
 		send_mail(emailsub, emailmessage, emailFrom, list(emailTo), fail_silently=True)
 		#Autoreply.

@@ -13,7 +13,7 @@ def autoreply(toaddr):
 
 	msg['From'] = fromaddr
 	msg['To'] = toaddr
-	msg['Subject'] = "Contact mDeommerce reply"
+	msg['Subject'] = "CookMyShow Autoreply "
 
 	body = "Thanks for contacting us. We will get back to you after processing your submission."
 

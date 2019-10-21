@@ -125,7 +125,7 @@ def movie_details(request, movie_id):
 			date=datetime.date.today()).order_by('theatre')
 		show_list = []
 		show_by_theatre = []
-		theatre = shows[0].theatre
+		# theatre = shows[0].theatre
 		for i in range(0, len(shows)):
 			if theatre != shows[i].theatre:
 				theatre = shows[i].theatre
