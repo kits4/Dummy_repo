@@ -8,7 +8,11 @@ def autoreply(toaddr):
 	"""SEnd reply to contact submission."""
 
 	fromaddr = "batchbvjti@gmail.com"
+<<<<<<< HEAD
+	the_pwd = "vjti@123b"
+=======
 	the_pwd="vjti@123b"
+>>>>>>> 16c0f4ffad00d65ab2f99f3a18d2a7311841d23b
 	msg = MIMEMultipart()
 
 	msg['From'] = fromaddr
