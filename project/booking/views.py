@@ -121,10 +121,14 @@ def movie_list(request):
 def movie_details(request, movie_id):
 	try:
 		movie_info = Movie.objects.get(pk=movie_id)
+<<<<<<< HEAD
+		shows = Show.objects.filter(movie=movie_id,date=datetime.date.today()).order_by('theatre')
+=======
 		shows = Show.objects.filter(movie=movie_id, date=datetime.date.today()).order_by('theatre')
+>>>>>>> 16c0f4ffad00d65ab2f99f3a18d2a7311841d23b
 		show_list = []
 		show_by_theatre = []
-		theatre = shows[0].theatre
+		#theatre = shows[0].theatre
 		for i in range(0, len(shows)):
 			if theatre != shows[i].theatre:
 				theatre = shows[i].theatre
