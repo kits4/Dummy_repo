@@ -174,9 +174,8 @@ def theatre_details(request, theatre_id):
 			show_by_movie.append(shows[i])
 
 		show_list.append(show_by_movie)
-
 		print(show_list)
-
+		
 	except Theatre.DoesNotExist:
 		raise Http404("Page does not exist")
 	return render(request, 'theatre/theatre_details.html',
