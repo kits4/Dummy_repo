@@ -15,6 +15,6 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='show',
             name='theatre',
-            field=models.CharField(blank=True, default='Waves Cinema', max_length=30, null=True),
+            field=models.CharField(blank=True, default='CookMyShow', max_length=30, null=True),
         ),
     ]
