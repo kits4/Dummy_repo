@@ -1,4 +1,4 @@
-from .import autoreply 
+from .import autoreply
 from django.shortcuts import render
 from django.core.mail import send_mail
 from django.conf import settings
@@ -14,7 +14,7 @@ def contact(request):
 	if form.is_valid():
 		user_name = form.cleaned_data['Username']
 		user_message = form.cleaned_data['Message']
-		emailsub = user_name + " tried contacting you on Waves Theatre."
+		emailsub = user_name + " tried contacting you on CookMyShow."
 		emailFrom = form.cleaned_data['UserEmail']
 		emailmessage = '%s %s user email: %s' %(user_message, user_name, emailFrom)
 		emailTo = [settings.EMAIL_HOST_USER]

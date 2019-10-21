@@ -15,7 +15,7 @@ class Theatre(models.Model):
         ('BANGALORE','Bangalore'),
         ('HYDERABAD','Hyderabad'),
     )
-    name = models.CharField(max_length=50,null=False,default="Waves Cinema")
+    name = models.CharField(max_length=50,null=False,default="CookMyShow")
     city = models.CharField(max_length=9,choices=city_choice,null=False)
     address = models.CharField(max_length=30)
     no_of_screen = models.IntegerField()

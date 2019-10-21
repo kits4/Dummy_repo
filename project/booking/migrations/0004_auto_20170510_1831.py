@@ -19,7 +19,7 @@ class Migration(migrations.Migration):
             name='Theatre',
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('name', models.CharField(default='Waves Cinema', max_length=50)),
+                ('name', models.CharField(default='CookMyShow', max_length=50)),
                 ('city', models.CharField(choices=[('DELHI', 'Delhi'), ('KOLKATA', 'Kolkata'), ('MUMBAI', 'Mumbai'), ('CHENNAI', 'Chennai'), ('BANGALORE', 'Bangalore'), ('HYDERABAD', 'Hyderabad')], max_length=9)),
                 ('address', models.CharField(max_length=30)),
                 ('no_of_screen', models.IntegerField()),
